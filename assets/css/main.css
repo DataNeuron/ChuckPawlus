@@ -1914,7 +1914,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-		/* 	background-color: #ffffff; */
+			background-color: #ffffff;
 			color: #312450 !important;
 		}
 
@@ -2255,10 +2255,26 @@ input, select, textarea {
 				padding: 1.5em 0 0 1.5em;
 				width: calc(100% - 1.5em);
 			}
+				form > .fields > .cont {
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 0;
+				-moz-flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				-ms-flex-shrink: 0;
+				flex-shrink: 0;
+				padding: 1.5em 0 0 1.5em;
+				width: calc(100% - 1.5em);
+			}
 
 				form > .fields > .field.half {
 					width: calc(50% - 0.75em);
 				}
+				form > .fields > .cont.half {
+					width: calc(75% - 0.75em);
+				}
+
 
 				form > .fields > .field.third {
 					width: calc(100%/3 - 0.5em);
@@ -2276,6 +2292,10 @@ input, select, textarea {
 			}
 
 				form > .fields > .field {
+					padding: 1.5em 0 0 1.5em;
+					width: calc(100% - 1.5em);
+				}
+				form > .fields > .cont {
 					padding: 1.5em 0 0 1.5em;
 					width: calc(100% - 1.5em);
 				}
